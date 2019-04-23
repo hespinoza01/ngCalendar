@@ -6,6 +6,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { MainComponent } from './components/main/main.component';
 import { DateChangerComponent } from './components/dateChanger/dateChanger.component';
 import { DateBarControlComponent } from './components/dateBarControl/dateBarControl.component';
+import { CalendarComponent } from './components/calendar/calendar.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { DateBarControlComponent } from './components/dateBarControl/dateBarCont
     HeaderComponent,
     MainComponent,
     DateChangerComponent,
-    DateBarControlComponent
+    DateBarControlComponent,
+    CalendarComponent
   ],
   imports: [
     BrowserModule

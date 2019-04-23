@@ -1,0 +1,30 @@
+div{
+  display: grid;
+  grid-template-columns: repeat(7, 2.25rem);
+  grid-template-rows: 1rem;
+  grid-auto-rows: 2.25rem;
+  grid-gap: 10px;
+  padding-top: 1rem;
+}
+
+span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendarItem{
+  border: 1px solid #ccc;
+  cursor: default;
+}
+
+.calendarItem.active{
+  background-color: rgba(65, 105, 225, .3);
+  color: royalblue;
+  border-color: royalblue;
+}
+
+.calendarItem.current{
+  color: royalblue;
+  border-color: royalblue;
+}
