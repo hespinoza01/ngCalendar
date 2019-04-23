@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component/*, ChangeDetectorRef*/} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'base7NR';
+  public title = 'ngCalendar';
+  /*public headerAppHeaight: number;
+  public mainAppHeight: number;*/
+
+  constructor(
+    // private cdref: ChangeDetectorRef
+  ){}
+
+  /*getHeaderHeight($data){
+    this.headerAppHeaight = $data;
+    this.mainAppHeight = window.innerHeight - this.headerAppHeaight;
+    this.cdref.detectChanges();
+  }*/
 }
