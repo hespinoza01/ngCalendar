@@ -1,8 +1,8 @@
 <div>
   <span *ngFor="let dayWeek of daysOfWeek">{{ dayWeek }}</span>
-  <span *ngFor="let i of dayWeek">{{ i }}</span>
+  <span *ngFor="let i of date.dayWeek">{{ i }}</span>
   <span class="calendarItem"
-        *ngFor="let i of Days()"
-        [ngClass]="{current: i == currentDay, active: i == currentDay}"
+        *ngFor="let i of date.days"
+        [ngClass]="{current: i == date.getCurrentDay(), active: i == date.getCurrentDay()}"
         (click)="changeActive($event)">{{i}}</span>
 </div>

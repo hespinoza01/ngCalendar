@@ -1,4 +1,5 @@
-import { Component/*, Input*/ } from '@angular/core';
+import { Component } from '@angular/core';
+import { DateService } from '../../services/date.service';
 
 @Component({
   selector: 'main-app',
@@ -6,5 +7,13 @@ import { Component/*, Input*/ } from '@angular/core';
 })
 
 export class MainComponent {
-  // @Input() HeightMain: number = 0;
+
+  constructor(
+    private date: DateService
+  ){}
+
+  ngOnInit(){
+    this.date.setDate(new Date().toDateString());
+  }
+
 }

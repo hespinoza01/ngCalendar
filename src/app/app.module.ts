@@ -8,6 +8,8 @@ import { DateChangerComponent } from './components/dateChanger/dateChanger.compo
 import { DateBarControlComponent } from './components/dateBarControl/dateBarControl.component';
 import { CalendarComponent } from './components/calendar/calendar.component';
 
+import { DateService } from './services/date.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +22,7 @@ import { CalendarComponent } from './components/calendar/calendar.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [DateService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
