@@ -18,7 +18,7 @@ export class CalendarComponent {
     const next = $event.target,
         prev = next.parentElement.querySelector('.active');
 
-    prev.classList.remove('active');
+    if (prev) prev.classList.remove('active');
     next.classList.add('active');
   }
 

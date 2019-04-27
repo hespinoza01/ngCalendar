@@ -3,6 +3,8 @@
   <span *ngFor="let i of date.dayWeek">{{ i }}</span>
   <span class="calendarItem"
         *ngFor="let i of date.days"
-        [ngClass]="{current: i == date.getCurrentDay(), active: i == date.getCurrentDay()}"
+        [ngClass]="{
+          current: (i === date.getCurrentDay()) && (date.date.toDateString() === date.dateCurrent.toDateString())
+        }"
         (click)="changeActive($event)">{{i}}</span>
 </div>
