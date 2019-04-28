@@ -3,3 +3,7 @@ header{
   padding: .75rem 1.5rem;
   box-shadow: 0 0 5px 2px #ccc;
 }
+
+h1{
+  cursor: pointer;
+}

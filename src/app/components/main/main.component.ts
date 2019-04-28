@@ -3,7 +3,8 @@ import { DateService } from '../../services/date.service';
 
 @Component({
   selector: 'main-app',
-  templateUrl: 'main.component.html'
+  templateUrl: 'main.component.html',
+  styleUrls: ['main.component.css']
 })
 
 export class MainComponent {

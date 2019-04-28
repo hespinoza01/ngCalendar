@@ -1,14 +1,32 @@
+div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 span, button{
   text-align: center;
 }
 
 span{
   display: inline-block;
+  width: 7rem;
   padding: 0 .25rem;
-  line-height: 1.5;
 }
 
 button{
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.75rem;
+  height: 1.75rem;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transform: scale(1);
+  transition: transform .3s;
 }
+
+button:active{
+  transform: scale(.9);
+}
+
+
